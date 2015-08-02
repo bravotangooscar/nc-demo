@@ -4,7 +4,7 @@ Config management demo
 
 ## Key actions
 
-1. Provisions a CentOS server VM
+1. Provisions an Ubuntu Precise 64 server VM
 1. Installs Nginx
 	* Configured to serve pages on port 8000
 1. Downloads the content of https://github.com/puppetlabs/excercise-webpage
