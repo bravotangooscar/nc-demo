@@ -5,12 +5,17 @@ Config management demo
 ## Key actions
 
 1. Provisions an Ubuntu Precise 64 server VM
+	* Configures a local private network for the server to be viewed at `10.2.1.15`
+	* Redirects `localhost:8000` to the guest on port `8000`
 1. Installs Nginx
-	* Configured to serve pages on port 8000
+	* Configured to serve pages on port 8000 
 1. Downloads the content of https://github.com/puppetlabs/excercise-webpage
 	* Served at the web root
 	* Validates last-modified and etag checksum to prevent redownload
 	* Will only update site content if zip archive is modified
+
+### QED
+Content can be viewed at: http://10.2.2.15:8000 or http://localhost:8000
 
 ## Under the hood
 * Ubuntu Precise 64 VM retrieved from Vagrant's website (for simplicity)
